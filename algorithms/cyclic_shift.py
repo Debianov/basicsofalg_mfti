@@ -1,9 +1,15 @@
 targetList = [1, 2, 3, 4, 5, 6, 234234, 1223123, 435534453]
-
-for index in range(len(targetList) // 2):
-	targetList[index], targetList[len(targetList) - 1 - index] = targetList[len(targetList) - 1 - index], targetList[index]
+listLength = len(targetList)
+temp = targetList[0]
+for ind in range(listLength - 1):
+	targetList[ind] = targetList[ind + 1]
+targetList[listLength - 1] = temp
 print(targetList)
 
-for index in range(len(targetList) // 2, -1, -1):
-	targetList[index], targetList[len(targetList) - 1 - index] = targetList[len(targetList) - 1 - index], targetList[index]
+targetList = [2, 3, 4, 5, 6, 7]
+listLength = len(targetList)
+temp = targetList[listLength - 1]
+for ind in range(listLength - 2, -1, -1):
+	targetList[ind + 1] = targetList[ind]
+targetList[0] = temp
 print(targetList)
