@@ -6,7 +6,7 @@ import time
 SIZE_X = 400
 SIZE_Y = 400
 
-window = gr.GraphWin("Model", SIZE_X, SIZE_Y)
+window = gr.GraphWin("DVD", SIZE_X, SIZE_Y)
 
 currentPosition = gr.Point(200, 200)
 currentSpeed = gr.Point(1, 2)

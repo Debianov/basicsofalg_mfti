@@ -6,7 +6,7 @@ import time
 SIZE_X = 800
 SIZE_Y = 800
 
-window = gr.GraphWin("Model", SIZE_X, SIZE_Y)
+window = gr.GraphWin("Solar System", SIZE_X, SIZE_Y)
 ball_coords = gr.Point(400, 700)
 sun_center = gr.Point(400, 400)
 velocity = gr.Point(2, 0)
