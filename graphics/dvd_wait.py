@@ -1,3 +1,5 @@
+	# TODO сделать нормальное закрытие.
+
 import graphics as gr
 import time
 
