@@ -1,6 +1,6 @@
-target = [2, 3, 6, 8, 1, 23423, -1]
-for currentElementIndex in range(0, len(target) - 1):
-	for shiftedElementIndex in range(currentElementIndex + 1, len(target)):
-		if target[currentElementIndex] > target[shiftedElementIndex]:
-			target[currentElementIndex], target[shiftedElementIndex] = target[shiftedElementIndex], target[currentElementIndex]
+target = [2, 5, -1, 3, -5, 0]
+for choiceElementIndex in range(0, len(target) - 1):
+	for comparedElementIndex in range(choiceElementIndex + 1, len(target)):
+		if target[comparedElementIndex] < target[choiceElementIndex]:
+			target[comparedElementIndex], target[choiceElementIndex] = target[choiceElementIndex], target[comparedElementIndex]
 print(target)
