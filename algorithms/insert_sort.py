@@ -1,8 +1,8 @@
 target = [3, 1, 2, 4]
-for currentElementIndex in range(1, len(target)):
-	for shiftedElementIndex in range(currentElementIndex, 0, -1):
-		if target[shiftedElementIndex] < target[shiftedElementIndex - 1]:
-			target[shiftedElementIndex], target[shiftedElementIndex - 1] = target[shiftedElementIndex - 1], target[shiftedElementIndex]
+for topLimit in range(1, len(target)):
+	for comparedElementIndex in range(topLimit, 0, -1):
+		if target[comparedElementIndex] < target[comparedElementIndex - 1]:
+			target[comparedElementIndex], target[comparedElementIndex - 1] = target[comparedElementIndex - 1], target[comparedElementIndex]
 		else:
 			break
-	print(target)
+print(target)
