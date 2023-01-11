@@ -1,3 +1,4 @@
+	# TODO здесь, скорее всего, тоже нужно сделать методом обратного прохода формирование consecutive (lecture 11/practice/exercise 4.py, 1 вариант).
 def lcs(A, B):
 	matrix_counters = [[0] * (len(B) + 1) for _ in range((len(A) + 1))]
 	consecutive = []

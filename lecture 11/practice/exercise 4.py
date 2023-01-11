@@ -4,6 +4,7 @@ N = 19
 
 target = [randint(-10000, 10000) for i in range(N + 1)]
 
+# 1 вариант: по методу из практической.
 def calculate_min_cost(n, price):
 	one_cell_price = [price[0], price[0] + price[1], price[0] + price[1] + price[2]] * (n - 3)
 	min_cell_price = [0] * n
@@ -23,6 +24,7 @@ def calculate_min_cost(n, price):
 
 print(calculate_min_cost(N, target))
 
+# 2 вариант: свой вариант. В некоторых случаях добавляет лишние точки, если сравнивать с 1 вариантом.
 def calculate_min_cost(n, price):
 	one_cell_price = [price[0], price[0] + price[1], price[0] + price[1] + price[2]] * (n - 3)
 	cheap_path = [1]

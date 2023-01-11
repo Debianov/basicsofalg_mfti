@@ -1,7 +1,6 @@
 def setPositionStatusInQueenGame(N, M):
 	i = N - 1
 	matrix = [[False] * M for _ in range(N)]
-	matrix[-1][-1] = False
 	for j in range(M - 1): # движение влево # TODO в отдельную функцию
 		matrix[i][j] = True
 	j = M - 1
